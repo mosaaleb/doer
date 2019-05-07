@@ -5,6 +5,6 @@ class ApplicationController < ActionController::Base
     end
   end
   def signed_in?
-    session[:useremail].present?
+    session[:current_email].present?
   end
 end
